@@ -26,7 +26,7 @@ st.markdown('<h1 class="main-header">Customer Churn Analytics Dashboard</h1>', u
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('fix.csv')
+        df = pd.read_csv('../data/fix.csv')
         # st.sidebar.success(f"✅ Data loaded successfully: {len(df)} records from fix.csv")
         return df
     except FileNotFoundError:
