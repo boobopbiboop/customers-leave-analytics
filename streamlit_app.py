@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 
-st.set_page_config(page_title="🎯 Customer Churn Analytics", page_icon="🎯", layout="wide")
+st.set_page_config(page_title="Customer Churn Analytics", page_icon="Nad", layout="wide")
 
 # Custom CSS
 st.markdown("""
@@ -26,7 +26,7 @@ st.markdown('<h1 class="main-header">Customer Churn Analytics Dashboard</h1>', u
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('../data/fix.csv')
+        df = pd.read_csv('data/fix.csv')
         # st.sidebar.success(f"✅ Data loaded successfully: {len(df)} records from fix.csv")
         return df
     except FileNotFoundError:
